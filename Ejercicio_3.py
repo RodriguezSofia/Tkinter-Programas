@@ -1,19 +1,21 @@
 import tkinter
 ventana=tkinter.Tk()
 ventana.geometry("600x400")
-ventana.title("Ejercicio 3")
+ventana.title("Lista de Tareas")
+ventana.iconbitmap("Imagenes/libreta.ico")
+ventana.configure(bg="lightyellow")
 #Titulo
-etiqueta=tkinter.Label(ventana, text="Lista de tareas", fg="red", font=("Arial", 16," bold"))
+etiqueta=tkinter.Label(ventana, text="Lista de tareas", fg="darkred", bg="lightyellow", font=("Arial", 16," bold"))
 etiqueta.pack()
 
 #Entrada de tarea
-etiqueta_tarea=tkinter.Label(ventana, text="Tarea a agregar:", font=("Arial", 12))
+etiqueta_tarea=tkinter.Label(ventana, text="Tarea a agregar:", bg="lightyellow", font=("Arial", 12))
 etiqueta_tarea.pack()
 tarea=tkinter.Entry(ventana,font=("Arial", 12))
 tarea.pack()
 
 #Lista de tareas
-etiqueta_lista=tkinter.Label(ventana, text="Tareas:", font=("Arial", 12, "bold"))
+etiqueta_lista=tkinter.Label(ventana, text="Tareas:", bg="lightyellow", font=("Arial", 12, "bold"))
 etiqueta_lista.pack()
 lista_tareas=tkinter.Listbox(ventana, font=("Arial", 12), width=40, height=10)
 lista_tareas.pack() #Listbox sirve para crear listas

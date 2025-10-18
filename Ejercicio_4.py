@@ -2,6 +2,7 @@ import tkinter
 ventana=tkinter.Tk()
 ventana.geometry("400x300")
 ventana.title("Ejercicio 4")
+ventana.iconbitmap("Imagenes/cursor.ico")
 #TITULO
 etiqueta=tkinter.Label(ventana, text="Contador de cliks", fg="blue", font=("Arial", 18," bold"))
 etiqueta.pack()
