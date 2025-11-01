@@ -1,5 +1,5 @@
 import tkinter #se importa solo el modulo tkinter
-#si queremos utilizar todo lo que trae la libreria utilizamos form tkinter import *
+#si queremos utilizar todo lo que trae la libreria utilizamos=  form tkinter import *
 ventana=tkinter.Tk() #se crea una ventana
 ventana.geometry("400x300") #se define el tamaño de la ventana
 #metodo grid ayuda a posicionar nustros widgets

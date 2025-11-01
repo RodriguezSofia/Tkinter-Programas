@@ -4,6 +4,7 @@ ventana.geometry("600x400")
 ventana.title("Lista de Tareas")
 ventana.iconbitmap("Imagenes/libreta.ico")
 ventana.configure(bg="lightyellow")
+
 #Titulo
 etiqueta=tkinter.Label(ventana, text="Lista de tareas", fg="red", bg="lightyellow", font=("Arial", 16," bold"))
 etiqueta.pack()

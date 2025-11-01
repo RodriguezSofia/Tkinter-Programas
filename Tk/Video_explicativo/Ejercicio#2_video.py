@@ -6,4 +6,4 @@ def saludo(nombre):
     print("Hola "+ nombre)
 boton1=tkinter.Button(ventana, text ="Presiona", command= lambda:saludo("Enrique"), padx=40,pady=40) #se crea un boton, padx=ancho, pady=alto, lambda para pasar parametros
 boton1.pack() #nos permite ver el boton en la ventana
-ventana.mainloop() #lleva el registro de lo que sucede en la ventana
+ventana.mainloop() 
