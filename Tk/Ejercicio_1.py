@@ -1,7 +1,8 @@
 import tkinter
 ventana=tkinter.Tk()
 ventana.geometry("400x300")
-ventana.title("Ejercicio 1")
+ventana.title("Formulario de Registro")
+ventana.iconbitmap("Imagenes/formulario.ico")
 #TITULO DEL FORMULARIO
 etiqueta=tkinter.Label(ventana, text="Formulario de registro", fg="purple", font=("Arial", 16," bold"))
 etiqueta.pack()
@@ -21,14 +22,17 @@ etiqueta_correo=tkinter.Label(ventana, text="Correo electronico:", font=("Arial"
 etiqueta_correo.pack()
 correo=tkinter.Entry(ventana,font=("Arial", 12))
 correo.pack()
+etiqueta_info=tkinter.Label(ventana, text="", fg="green", font=("Arial", 12, "italic"))
+
 #INFORMACION
 def info_guardada():
     nombre_guardado=nombre.get()
     edad_guardada=edad.get() 
     correo_guardado=correo.get()
-    etiqueta_info=tkinter.Label(ventana, text=f"Nombre: {nombre_guardado}, Edad: {edad_guardada}, Correo: {correo_guardado}", fg="green", font=("Arial", 12, "italic"))
-    etiqueta_info.pack()
+    nuevo_texto = f"Nombre: {nombre_guardado}, Edad: {edad_guardada}, Correo: {correo_guardado}"
+    etiqueta_info.config(text=nuevo_texto)
 #BOTON "GUARDAR"
 boton=tkinter.Button(ventana, text="Guardar", command= info_guardada)
 boton.pack()
+etiqueta_info.pack()
 ventana.mainloop()
